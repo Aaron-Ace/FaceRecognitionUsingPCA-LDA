@@ -18,7 +18,7 @@
 
 ### 程式架構圖：
 
-![](https://i.imgur.com/njq6qLq.jpg =x50%)
+![](https://i.imgur.com/njq6qLq.jpg)
 
 ### PCA 模型：
 ```
@@ -71,7 +71,7 @@
 ### 辨識結果：
 * 分為兩列，第一列為PCA結果，第二列為LDA結果
 
-![](https://i.imgur.com/kIBLnjz.jpg =100%x)
+![](https://i.imgur.com/kIBLnjz.jpg)
 
 根據上圖可以發現經過PCA降維之後的樣本與再經過LDA降維的樣本相比
 後者的辨識度幾乎都有提升，除了降成10維的樣本沒有符合這個規律
@@ -82,21 +82,15 @@
 
 ### 混淆矩陣結果：
 
-![](https://i.imgur.com/gtla1nP.png =50%x)![](https://i.imgur.com/XloEabw.png =50%x)
+![](https://i.imgur.com/gtla1nP.png)![](https://i.imgur.com/XloEabw.png)
 * 根據上面兩張10維的混淆矩陣可以發現，LDA的版本雖然有效的修正了一些不良的特徵，但是卻也新增了一些不完整的特徵，造成結果不能優於PCA的版本。
-![](https://i.imgur.com/UISP6pD.png =50%x)![](https://i.imgur.com/MndAyMC.png =50%x)
+![](https://i.imgur.com/UISP6pD.png)![](https://i.imgur.com/MndAyMC.png)
 * 根據維度的慢慢提升，LDA版本的表現慢慢高於PCA的表現。
-![](https://i.imgur.com/bC3yjHX.png =50%x)![](https://i.imgur.com/qeFsd9o.png =50%x)
+![](https://i.imgur.com/bC3yjHX.png)![](https://i.imgur.com/qeFsd9o.png)
 * 錯誤的比數越來越低
-![](https://i.imgur.com/BlhXuwS.png =50%x)![](https://i.imgur.com/wJc71Yk.png =50%x)
+![](https://i.imgur.com/BlhXuwS.png)![](https://i.imgur.com/wJc71Yk.png)
 * 維度升高特徵比較充足，整體表現都有提升
-![](https://i.imgur.com/wyCam5v.png =50%x)![](https://i.imgur.com/JnClWnZ.png =50%x)
-
-### 結果探討與心得
-
-這次的作業內容還蠻特別的，一般人臉辨識的像素特徵都會以較多的數量以當前最完整的方式去做辨認偵測，這樣數學的模式將其降維之後再作辨認，沒想到效果也很好，辨識率竟然也可以達到99%讓我有點驚訝，但是我不太知道如果資料量大了之後會不會造成辨識率降低，因為特徵不夠多。
-
-整體而言，這次使用Sk-learn套件讓我的作業簡單的許多，另外PGM的影像檔是以往沒有使用過的圖像類型，是個特別的體驗。
+![](https://i.imgur.com/wyCam5v.png)![](https://i.imgur.com/JnClWnZ.png)
 
 
 
