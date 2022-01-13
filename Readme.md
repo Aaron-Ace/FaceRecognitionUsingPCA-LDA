@@ -82,15 +82,20 @@
 
 ### 混淆矩陣結果：
 
-![](https://i.imgur.com/gtla1nP.png)![](https://i.imgur.com/XloEabw.png)
+![](https://i.imgur.com/gtla1nP.png)
+![](https://i.imgur.com/XloEabw.png)
 * 根據上面兩張10維的混淆矩陣可以發現，LDA的版本雖然有效的修正了一些不良的特徵，但是卻也新增了一些不完整的特徵，造成結果不能優於PCA的版本。
-![](https://i.imgur.com/UISP6pD.png)![](https://i.imgur.com/MndAyMC.png)
+![](https://i.imgur.com/UISP6pD.png)
+![](https://i.imgur.com/MndAyMC.png)
 * 根據維度的慢慢提升，LDA版本的表現慢慢高於PCA的表現。
-![](https://i.imgur.com/bC3yjHX.png)![](https://i.imgur.com/qeFsd9o.png)
+![](https://i.imgur.com/bC3yjHX.png)
+![](https://i.imgur.com/qeFsd9o.png)
 * 錯誤的比數越來越低
-![](https://i.imgur.com/BlhXuwS.png)![](https://i.imgur.com/wJc71Yk.png)
+![](https://i.imgur.com/BlhXuwS.png)
+![](https://i.imgur.com/wJc71Yk.png)
 * 維度升高特徵比較充足，整體表現都有提升
-![](https://i.imgur.com/wyCam5v.png)![](https://i.imgur.com/JnClWnZ.png)
+![](https://i.imgur.com/wyCam5v.png)
+![](https://i.imgur.com/JnClWnZ.png)
 
 
 
