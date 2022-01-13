@@ -25,7 +25,7 @@ def loadImageSet(folder='./att_faces', sampleCount=5):  # 載入圖像集，隨�
     return np.array(trainData), np.array(yTrain), np.array(testData), np.array(yTest)
 
 
-def PCA_model(dimension, xTrain, xTest, yTrain):
+def PCA_model(dimension, xTrain, xTest, yTrain): # PCA 模型訓練
     pca = PCA(n_components=dimension)
     pca.fit(xTrain, yTrain)
     xTrain = pca.transform(xTrain)
@@ -33,14 +33,14 @@ def PCA_model(dimension, xTrain, xTest, yTrain):
     return xTrain, xTest
 
 
-def LDA_model(xTrain, xTest, yTrain):
+def LDA_model(xTrain, xTest, yTrain): # LDA 模型訓練
     lda = LDA()
     xTrain = lda.fit_transform(xTrain, yTrain)
     xTest = lda.transform(xTest)
     return xTrain, xTest
 
 
-def plot_confusion_matrix(name, dimension, confusion_mat):
+def plot_confusion_matrix(name, dimension, confusion_mat): #繪製混淆矩陣
     plt.imshow(confusion_mat, interpolation='nearest', cmap=plt.cm.gray)
     plt.title('{} Dimension {} Confusion matrix'.format(name, dimension))
     plt.colorbar()
