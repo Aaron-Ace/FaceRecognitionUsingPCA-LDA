@@ -1,5 +1,4 @@
 # Python PCA LDA 臉部辨識
-#### [FaceRecognitionUsingPCA&LDA Github Link](https://github.com/Aaron-Ace/FaceRecognitionUsingPCA-LDA)
 
 ### 實作作方法與步驟：
 
