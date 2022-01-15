@@ -1,4 +1,4 @@
-# Python PCA LDA 臉部辨識 (SK-learn)
+# Python PCA LDA 臉部辨識
 #### [FaceRecognitionUsingPCA&LDA Github Link](https://github.com/Aaron-Ace/FaceRecognitionUsingPCA-LDA)
 
 ### 實作作方法與步驟：
@@ -22,8 +22,8 @@
 
 ### PCA 模型：
 ```
-    def PCA_model(dimension, xTrain, xTest, yTrain):
-        pca = PCA(n_components=dimension)
+    def PCA_model(dimension, xTrain, xTest):
+        pca = PCA(dimension)
         pca.fit(xTrain, yTrain)
         xTrain = pca.transform(xTrain)
         xTest = pca.transform(xTest)
@@ -32,9 +32,9 @@
 ```
 ### LDA 模型：
 ```
-    def LDA_model(xTrain, xTest, yTrain):
+    def LDA_model(xTrain, xTest):
         lda = LDA()
-        xTrain = lda.fit_transform(xTrain, yTrain)
+        xTrain = lda.fit_transform(xTrain)
         xTest = lda.transform(xTest)
         return xTrain, xTest
 
